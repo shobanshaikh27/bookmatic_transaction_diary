@@ -6,9 +6,8 @@ const app = express();
 
 const db = require('./models/index');
 const APIRoutes = require('./routes/index.js');
-// const {PORT} = require('./config/serverConfig.js');
 
-//  process.env.JWT_KEY
+
 const PORT = process.env.PORT;
 
 
@@ -23,7 +22,6 @@ const prepareAndStartServer = ()=>{
 
     app.listen(PORT ,async ()=>{
     console.log(`Server Started on Port : ${PORT}`);
-    console.log(process.env.JWT_KEY)
     })
 }
 
