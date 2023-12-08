@@ -1,13 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+require('dotenv').config()
 const app = express();
 
 const db = require('./models/index');
 const APIRoutes = require('./routes/index.js');
 // const {PORT} = require('./config/serverConfig.js');
-const PORT = 5000;
+
+//  process.env.JWT_KEY
+const PORT = process.env.PORT;
 
 
 const prepareAndStartServer = ()=>{
@@ -21,6 +23,7 @@ const prepareAndStartServer = ()=>{
 
     app.listen(PORT ,async ()=>{
     console.log(`Server Started on Port : ${PORT}`);
+    console.log(process.env.JWT_KEY)
     })
 }
 

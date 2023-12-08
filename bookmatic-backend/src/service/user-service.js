@@ -1,8 +1,7 @@
 const bcrypt = require('bcrypt');
 const JWT = require("jsonwebtoken");
 // const {JWT_KEY} = require('../config/serverConfig.js');
-const JWT_KEY="Secret_key"
-
+// const JWT_KEY="Secret_key"
 const userRepositroy = require("../repository/user-Repository.js");
 
 class UserService{
@@ -42,7 +41,7 @@ class UserService{
                 throw { message : "Incorrect Password"};
             }
 
-            const token = JWT.sign(userData,JWT_KEY,{expiresIn : '1d'});
+            const token = JWT.sign(userData,process.env.JWT_KEY,{expiresIn : '1d'});
 
             return token;
         } catch (error) {
