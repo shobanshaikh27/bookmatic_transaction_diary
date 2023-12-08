@@ -1,0 +1,9 @@
+{
+    "development": {
+      "username": "root",
+      "password": "shoban2000",
+      "database": "Online_Transation_Diary_Dev",
+      "host": "localhost",
+      "dialect": "mysql"
+    }
+  }
