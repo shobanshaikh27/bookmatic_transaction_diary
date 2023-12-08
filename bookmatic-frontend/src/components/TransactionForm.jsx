@@ -102,12 +102,12 @@ const TransactionForm = () => {
     e.preventDefault();
     console.log("Form Data:", formData);
     try {
-      await axios.post('http://localhost:5000/api/v1/transactions', formData, {
+      await axios.post('http://localhost:5220/api/v1/transactions', formData, {
         headers: {
           "x-access-token": `${localStorage.getItem('token')}`,
         },
       });
-      navigate('/l')
+      navigate('/getTransactions')
     } catch (error) {
       console.error('Error creating transaction:', error);
     }
