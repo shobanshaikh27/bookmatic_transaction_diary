@@ -11,9 +11,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />}/>
         {/* <Route path="/:id" element={<TransactionList />}/> */}
-        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path='/getTransactions' element={<ShowTransactions />} />
         {/* Add more routes as needed */}

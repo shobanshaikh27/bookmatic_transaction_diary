@@ -42,7 +42,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>}
-                    {isMobile && <ul className='absolute flex-1 justify-center items-center gap-8 flex-col bg-white w-full min-h-screen top-0 left-0 hidden' ref={linksRef}>
+                    {isMobile && <ul className='absolute flex-1 justify-center items-center gap-8 flex-col bg-gradient-to-r  from-purple-400 to-blue-300 w-full min-h-screen top-0 left-0 hidden' ref={linksRef}>
                        
                         {navLinks.map((item) => (
                             <li key={item.label} className='relative navLinks '>
