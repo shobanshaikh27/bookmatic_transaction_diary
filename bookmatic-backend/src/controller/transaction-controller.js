@@ -75,54 +75,11 @@ const getTransactions = async(req,res)=>{
     }
 }
 
-const update = async(req,res)=>{
-    try {
-        const response = await transactionService.update(req.params.id , req.body);
-        return res.status(201).json({
-            success : true , 
-            message : "Successfully updated a transaction" , 
-            data : response ,
-            err : {
-                
-            }
-        })
-    } catch (error) {
-        console.log(error);
-        return res.status(400).json({
-            data : {},
-            err: error ,
-            message : "Something went wrong while updating a transaction" ,
-            success : false
-        })
-    }
-}
 
-const destroy = async(req,res)=>{
-    try {
-        const response = await transactionService.delete(req.params.id);
-        return res.status(201).json({
-            success : true , 
-            message : "Successfully deleted a transaction" , 
-            data : response ,
-            err : {
-                
-            }
-        })
-    } catch (error) {
-        console.log(error);
-        return res.status(400).json({
-            data : {},
-            err: error ,
-            message : "Something went wrong while deleting a transaction" ,
-            success : false
-        })
-    }
-}
+
 
 module.exports = {
     create,
     getTransactions , 
-    getById , 
-    update,
-    destroy
+    getById 
 }

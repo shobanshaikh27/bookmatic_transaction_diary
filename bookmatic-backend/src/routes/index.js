@@ -11,8 +11,6 @@ router.post('/v1/login', login);
 
 router.post('/v1/transactions', isAuthenticated , create);
 router.get('/v1/transactions/:id', getById);
-router.patch('/v1/transactions/:id' , update);
-router.delete('/v1/transactions/:id' , destroy);
 router.get('/v1/transactions', isAuthenticated , getTransactions);
 
 module.exports = router;

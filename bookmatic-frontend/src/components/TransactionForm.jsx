@@ -65,6 +65,7 @@ const TransactionForm = () => {
               value={formData.Amount}
               onChange={handleInputChange}
               className="mt-1 p-2 block w-full border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              required
             />
           </label>
           <label className="block text-sm font-medium text-gray-600">
@@ -74,6 +75,7 @@ const TransactionForm = () => {
               value={formData.TransactionType}
               onChange={handleInputChange}
               className="mt-1 p-2 block w-full border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              required
             >
               <option value="paid">Paid</option>
               <option value="received">Received</option>
@@ -87,6 +89,7 @@ const TransactionForm = () => {
               value={formData.PartyName}
               onChange={handleInputChange}
               className="mt-1 p-2 block w-full border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              required
             />
           </label>
           <button

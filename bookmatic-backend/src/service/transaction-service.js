@@ -34,27 +34,6 @@ class TransactionService{
             throw error ;
         }
     }
-
-    async update(id , data){
-        try {
-            const transaction = await this.transactionRepository.update(id , data);
-            return transaction;
-        } catch (error) {
-            console.log("something went wrong in service layer");
-            throw error ;
-        }
-    }
-
-    async delete(id){
-        try {
-            const transaction = await this.transactionRepository.delete(id);
-            return transaction;
-        } catch (error) {
-            console.log("something went wrong in service layer");
-            throw error ;
-        }
-    }
-
 }
 
 

@@ -26,7 +26,7 @@ const TransactionList = () => {
   return (
     <div className="font-poppins container min-h-screen mx-auto p-4 bg-gradient-to-r from-purple-400 to-blue-300">
       <h2 className="text-3xl font-semibold mb-4 text-center">Transaction List</h2>
-      <table className="min-w-full bg-gradient-to-r from-green-400 to-blue-500  border border-gray-300 shadow-md rounded-md overflow-hidden">
+      <table className="min-w-full bg-gradient-to-r from-violet-400 to-blue-500  border border-gray-300 shadow-md rounded-md overflow-hidden">
         <thead>
           <tr className='font-extrabold'>
             <th className="py-2 px-4 border-b text-center">Id</th>
