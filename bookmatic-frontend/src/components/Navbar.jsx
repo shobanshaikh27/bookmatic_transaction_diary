@@ -35,7 +35,7 @@ const Navbar = () => {
                            <h1>Transaction Diary</h1>
                         </div>
                     </Link>
-                    {!isMobile && <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden  '>
+                    {!isMobile && <ul className='flex-1 flex justify-center items-center gap-20 max-lg:hidden  '>
                         {navLinks.map((item) => (
                             <li key={item.label} className='relative navLinks'>
                                 <Link to={item.to} className='font-primary leading-normal text-lg  font-medium hoverLine text-[#212121] hover:text-primary transition hover:text-[#000000]'>{item.label}</Link>

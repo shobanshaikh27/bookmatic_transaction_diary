@@ -163,11 +163,11 @@ const Login = () => {
         </div>
       )}
       <div className="font-poppins min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
-        <div className="max-w-md w-full p-8 bg-white shadow-lg rounded-md">
-          <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">Login</h2>
+        <div className="max-w-md w-full max-md:mx-3 p-8 bg-gray-900 shadow-lg rounded-xl">
+          <h2 className="text-3xl font-semibold mb-6 text-center text-white">Login</h2>
           <form className="space-y-4">
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-gray-600">
+              <label htmlFor="username" className="block text-sm font-medium text-white">
                 Username
               </label>
               <input
@@ -175,12 +175,12 @@ const Login = () => {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="mt-1 p-2 block w-full border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                className="mt-1 p-2 block w-full border border-gray-900 rounded-md focus:outline-none focus:ring focus:border-blue-300 bg-slate-600 text-white"
                 required
               />
             </div>
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-600">
+              <label htmlFor="password" className="block text-sm font-medium text-white">
                 Password
               </label>
               <input
@@ -188,12 +188,12 @@ const Login = () => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="mt-1 p-2 block w-full border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                className="mt-1 p-2 block w-full border border-gray-900 rounded-md focus:outline-none focus:ring focus:border-blue-300 bg-slate-600 text-white"
                 required
               />
             </div>
-            <div className="text-sm text-gray-600">
-              Not a member?{' '}
+            <div className="text-sm text-white">
+              Not a member ?{' '}
               <button
                 type="button"
                 onClick={handleRegisterClick}
@@ -205,7 +205,7 @@ const Login = () => {
             <button
               type="button"
               onClick={handleLogin}
-              className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+              className="w-full bg-blue-500 text-black font-semibold p-2 rounded-md hover:bg-green-500">
               Login
             </button>
           </form>
