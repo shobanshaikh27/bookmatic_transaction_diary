@@ -1,8 +1,7 @@
 const JWT = require('jsonwebtoken');
 const UserRepository = require('../repository/user-Repository.js');
-// const {JWT_KEY} = require('../config/serverConfig.js');
 const userRepo = new UserRepository();
-// const JWT_KEY="Secret_key"
+
 
 
 const isAuthenticated = async( req, res , next)=>{

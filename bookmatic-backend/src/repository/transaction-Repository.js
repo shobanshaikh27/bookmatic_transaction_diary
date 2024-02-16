@@ -26,33 +26,6 @@ class TransactionRepository {
         }
     }
 
-    async delete(Id) {
-        try {
-            await Transaction.destroy({
-                where: {
-                    id: Id
-                }
-            }
-            )
-            return true;
-        } catch (error) {
-            console.log("Something went wrong on repository layer");
-            throw error;
-        }
-    }
-
-    async update(id , data){
-        try {
-            
-            await Transaction.update(data,{ where: { id: id } });
-            const updatedTransaction = await this.findById(id);
-            return updatedTransaction;
-        } catch (error) {
-            console.log("Something went wrong on repository layer");
-            throw {error};
-        }
-    }
-
     async findById(Id) {
         try {
 
